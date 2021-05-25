@@ -1,0 +1,58 @@
+<section class="about-banner relative">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+
+				<p class="text-white link-nav"><a href="<?php echo SERVERURL; ?>home">Home </a> <span
+						class="lnr lnr-arrow-right"></span>
+					<a href="<?php echo SERVERURL; ?>destino"> Destinos</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Start popular-destination Area -->
+<section class="popular-destination-area section-gap">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Destinos</h1>
+					<input type="hidden" id="pageDepartamento" value="1">
+				</div>
+
+			</div>
+		</div>
+		<div class="row" id="tbodyDepartamento">
+
+
+		</div>
+		<nav class="blog-pagination justify-content-center  col-12 ">
+			<ul class="pagination justify-content-center" id="paginationDepartamento">
+
+			</ul>
+		</nav>
+	</div>
+</section>
+<!-- End popular-destination Area -->
+
+
+
+
+<div class="modal fade" id="modalCargandoDepartamento" data-backdrop="static" data-keyboard="false" tabindex="-1"
+	role="dialog" style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="progress progress-striped active" style="margin-bottom: 0px;">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+						aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						Cargando Destinos. . .
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,125 @@
+<!--contenido de la pagina  -->
+
+<div class="container-fluid py-2 d-none" id="ciudadHTML">
+  <div class="form-row">
+    <div class="dropdown col-2">
+      <input type="hidden" id="pageCiudad" value="1">
+      <select id="sizePageCiudad" class="form-control">
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <h2 class="text-center all-tittles col-6" id="titleManagerCiudad">Lista de Ciudades</h2>
+
+    <div class="col-4 text-right">
+      <button class="btn btn-info" id="btnAbrirDepartamentos">
+        <i class="fa fa-list"></i> &nbsp;&nbsp;Departamentos
+      </button>
+      <button class="btn btn-primary" id="btnAbrirbook">
+        <i class="fa fa-plus-square"></i> &nbsp;&nbsp;Registrar
+      </button>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover text-center">
+      <thead>
+        <tr>
+          <th class="text-center">DEPARTAMENTO</th>
+          <th class="text-center">CIUDAD</th>
+          <th class="text-center">DESCRIPCION</th>
+          <th class="text-center">IMAGEN</th>
+          <th class="text-center">EDITAR</th>
+          <th class="text-center">ELIMINAR</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyCiudad"></tbody>
+    </table>
+  </div>
+  <nav class="border-top  text-center" aria-label="Page navigation example">
+    <ul id="paginationCiudad" class="pagination pagination-sm justify-content-center">
+    </ul>
+  </nav>
+  <!-- /pagination BLOG -->
+</div>
+
+
+<div id="ventanaModalManCiudad" class="modal fade" tabindex="-1" role="dialog" aria-modal="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <form id="formularioCiudad" autocomplete="off">
+        <div class="modal-header">
+
+          <h4 class="modal-title text-center w-100" id="tituloModalManCiudad"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            style="margin-top: -1em;margin-right: -1.5em;">
+            <span aria-hidden="true" class="m-0"
+              style="-webkit-text-stroke: 4px white;background: red;border: 0px solid;border-radius: 41px;padding: 5px 12px; font-size: 14px;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="margin-top:20px;">
+          <div class="row">
+            <div class="col-12 col-sm-10 mx-auto">
+
+              <div class="form-group">
+                <label for="txtDepartamentoCiudad">Departamento</label>
+                <input type="text" disabled class="form-control" id="txtDepartamentoCiudad" placeholder="Enter Nombre">
+              </div>
+              <div class="form-group">
+                <label for="txtNombreCiudad">Ciudad</label>
+                <input type="text" class="form-control" id="txtNombreCiudad" placeholder="Enter Ciudad">
+              </div>
+              <div class="form-group">
+                <label for="txtDescripcionCiudad">Descripcion</label>
+
+                <textarea class="form-control" id="txtDescripcionCiudad" placeholder="Enter Descripcion"
+                  rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="txtImagenCiudad">Imagen </label>
+                <div id="imagenPreview" class="py-2 text-center">
+                </div>
+                <input id="txtImagenCiudad" type="file" accept="image/png, image/jpeg, image/png" class="form-control"
+                  placeholder="Selecciona Imagen " data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Selecciona la Imagen ">
+
+                <small>Tamaño Máximo Permitido: 4 MB</small>
+                <br>
+                <small>Formatos Permitido:JPG, PNG, JPEG</small>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger " data-dismiss="modal">
+            CERRAR
+          </button>
+          <button type="submit" class="btn btn-primary ">
+            GUARDAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--final del contenido de la pagina  -->
+
+
+<div class="modal fade" id="modalCargandoCiudad" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  role="dialog" style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="progress progress-striped active" style="margin-bottom: 0px;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100"
+            aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            Cargando Ciudad. . .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

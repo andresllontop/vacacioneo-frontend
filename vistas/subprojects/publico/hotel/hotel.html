@@ -1,0 +1,69 @@
+<!-- start banner Area -->
+<section class="about-banner relative">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Hoteles
+				</h1>
+				<p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span>
+					<a href="hotels.html"> Hoteles</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start destinations Area -->
+<section class="destinations-area section-gap">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-40 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Hoteles Populares</h1>
+					<input type="hidden" id="pageHotel" value="1">
+
+					<div class="default-select text-center  d-flex justify-content-center" id="default-select">
+						<select style="display: none;" id="txtDepartamentoHotel">
+							<option value="0">Todos</option>
+						</select>
+						<div class="nice-select" tabindex="0">
+							<span class="current">Lambayeque</span>
+							<ul class="list" id="ulDepartamentoHotel">
+								<li data-value="0" class="option selected">Todos</li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row" id="tbodyHotel">
+
+		</div>
+		<nav class="blog-pagination justify-content-center  col-12 d-flex">
+			<ul class="pagination" id="paginationHotel">
+
+			</ul>
+		</nav>
+	</div>
+</section>
+<!-- End destinations Area -->
+<div class="modal fade" id="modalCargandoHotel" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+	style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="progress progress-striped active" style="margin-bottom: 0px;">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+						aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						Cargando Hotel. . .
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

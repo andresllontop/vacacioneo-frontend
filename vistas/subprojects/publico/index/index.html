@@ -1,0 +1,147 @@
+<!-- start banner Area -->
+<section class="banner-area relative">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row fullscreen align-items-center justify-content-between">
+			<div class="col-lg-6 col-md-6 banner-left">
+				<h6 class="text-white">Quien vive ve mucho
+				</h6>
+				<h1 class="text-white">Quien viaja ve más</h1>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start popular-destination Area -->
+<section class="popular-destination-area section-gap py-5">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Destinos populares</h1>
+					<input type="hidden" id="pageCiudad" value="1">
+				</div>
+			</div>
+		</div>
+		<div class="row" id="tbodyCiudad">
+
+
+		</div>
+		<nav class="blog-pagination justify-content-center  col-12 d-none">
+			<ul class="pagination" id="paginationCiudad">
+				<li class="page-item">
+					<a href="#" class="page-link" aria-label="Previous">
+						<span aria-hidden="true">
+							<span class="lnr lnr-chevron-left"></span>
+						</span>
+					</a>
+				</li>
+				<li class="page-item"><a href="#" class="page-link">01</a></li>
+				<li class="page-item active"><a href="#" class="page-link">02</a></li>
+				<li class="page-item"><a href="#" class="page-link">03</a></li>
+				<li class="page-item"><a href="#" class="page-link">04</a></li>
+				<li class="page-item"><a href="#" class="page-link">09</a></li>
+				<li class="page-item">
+					<a href="#" class="page-link" aria-label="Next">
+						<span aria-hidden="true">
+							<span class="lnr lnr-chevron-right"></span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</section>
+<!-- End popular-destination Area -->
+
+
+
+<!-- Start other-issue Area -->
+<section class="other-issue-area section-gap py-5">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-9">
+				<div class="title text-center">
+					<h1 class="mb-10">Otros problemas con los que podemos ayudarlo</h1>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-lg-6 col-md-6 mx-auto">
+				<div class="single-other-issue">
+					<div class="thumb">
+						<img class="img-fluid" src="<?php echo SERVERURL; ?>vistas/img/o3.jpg" alt="">
+					</div>
+					<a href="hotel">
+						<h4>Lista de Hoteles</h4>
+					</a>
+
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 d-none">
+				<div class="single-other-issue">
+					<div class="thumb">
+						<img class="img-fluid" src="<?php echo SERVERURL; ?>vistas/img/o4.jpg" alt="">
+					</div>
+					<a href="#">
+						<h4>Restaurantes recomendados</h4>
+					</a>
+					<p>
+						Hay muchos tipos de narrativas y principios organizativos. La ciencia está impulsada por la
+						evidencia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End other-issue Area -->
+
+
+
+<!-- Start home-about Area -->
+<section class="home-about-area d-none">
+	<div class="container-fluid">
+		<div class="row align-items-center justify-content-end">
+			<div class="col-lg-6 col-md-12 home-about-left">
+				<h1>
+					¿No encontró su paquete? <br>
+					No dudes en preguntarnos. <br>
+					Lo haremos por ti
+				</h1>
+				<p>
+					El comportamiento inapropiado a menudo es objeto de burla, ya que “los niños serán niños”, las
+					mujeres enfrentan estándares de conducta más altos, especialmente en el lugar de trabajo. Por
+					eso es fundamental que, como mujeres, nuestro comportamiento en el trabajo sea irreprochable. el
+					comportamiento inapropiado a menudo se ríe.
+				</p>
+				<a href="contact" class="primary-btn text-uppercase">Solicitar precio personalizado</a>
+			</div>
+			<div class="col-lg-6 col-md-12 home-about-right no-padding">
+				<img class="img-fluid" src="<?php echo SERVERURL; ?>vistas/img/about-img.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End home-about Area -->
+
+<div class="modal fade" id="modalCargandoCiudad" data-backdrop="static" data-keyboard="false" tabindex="-1"
+	role="dialog" style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="progress progress-striped active" style="margin-bottom: 0px;">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+						aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						Cargando Ciudades. . .
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,50 @@
+<!--contenido de la pagina  -->
+
+<div class="container-fluid py-2" id="departamentoHTML">
+    <div class="form-row">
+        <div class="dropdown col-2">
+            <input type="hidden" id="pageDepartamento" value="1">
+            <select id="sizePageDepartamento" class="form-control">
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+        </div>
+        <h2 class="text-center all-tittles col-8" id="titleManagerDepartamento">Lista de Departamentos</h2>
+
+
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover text-center">
+            <thead>
+                <tr>
+                    <th class="text-center">NOMBRE</th>
+                    <th class="text-center">CIUDADES</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyDepartamento"></tbody>
+        </table>
+    </div>
+    <nav class="border-top  text-center" aria-label="Page navigation example">
+        <ul id="paginationDepartamento" class="pagination pagination-sm justify-content-center">
+        </ul>
+    </nav>
+    <!-- /pagination BLOG -->
+</div>
+
+
+<div class="modal fade" id="modalCargandoDepartamento" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    role="dialog" style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="progress progress-striped active" style="margin-bottom: 0px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        Cargando Departamento. . .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

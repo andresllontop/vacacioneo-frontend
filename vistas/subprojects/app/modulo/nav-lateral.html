@@ -1,0 +1,31 @@
+<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+<nav id="ml-menu" class="menu">
+    <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+    <div class="menu__wrap" id="menus_vacacioneo">
+        <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+            <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="departamento"
+                    aria-owns="departamento" href="#">DEPARTAMENTOS</a></li>
+            <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="hotel" aria-owns="hotel"
+                    href="#">HOTELES</a></li>
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="categoria">CATEGORIAS</a></li>
+
+        </ul>
+        <!-- Submenu 1 -->
+        <ul data-menu="departamento" id="departamento" class="menu__level" tabindex="-1" role="menu"
+            aria-label="Departamentos">
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="departamento">Lista</a></li>
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="ciudad">Ciudades</a></li>
+        </ul>
+        <!-- Submenu 1-1 -->
+        <!-- Submenu 2 -->
+        <ul data-menu="hotel" id="hotel" class="menu__level" tabindex="-1" role="menu" aria-label="hotel">
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="hotel">Lista</a></li>
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="hotel/detalle">Detalle</a></li>
+
+        </ul>
+
+
+
+
+    </div>
+</nav>

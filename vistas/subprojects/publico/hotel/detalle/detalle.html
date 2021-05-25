@@ -1,0 +1,142 @@
+<!-- start banner Area -->
+<section class="banner-area relative blog-home-banner" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content blog-header-content col-lg-12">
+				<h1 class="text-white name_hotel">
+
+				</h1>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Start post-content Area -->
+<section class="post-content-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 ">
+				<div class="about-info-area section-gap pb-2">
+					<div class="container">
+						<div class="row align-items-center" id="tbodyHotel">
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-lg-4 sidebar-widgets pb-2">
+				<div class="widget-wrap">
+
+
+
+
+					<div class="single-sidebar-widget newsletter-widget" id="detalleHotel">
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="section-top-border px-5">
+	<h3 class="mb-30 text-center">¿Qué Incluye?</h3>
+	<div class="row ">
+
+		<div class="col-md-3 d-none">
+			<div class="single-defination text-center">
+				<i class="fa fa-map-marker fa-5x text-info"></i>
+				<h4 class="mb-20">Translados</h4>
+				<p class="txtTranslados"></p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="single-defination text-center">
+				<i class="fa fa-hotel fa-5x text-success"></i>
+				<h4 class="mb-20">Alojamiento</h4>
+				<p class="txtAlojamientos"></p>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="single-defination text-center">
+				<i class="fa fa-beer fa-5x text-warning"></i>
+				<h4 class="mb-20">Restaurante</h4>
+				<p class="txtAlimentacion"></p>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="single-defination text-center">
+				<i class="fa fa-car fa-5x"></i>
+				<h4 class="mb-20">Tours</h4>
+				<p class="txtTours"></p>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Start contact-page Area -->
+<section class="contact-page-area section-gap">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-4 d-flex flex-column address-wrap" id="infoHotel">
+
+			</div>
+			<div class="col-lg-8">
+				<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+					<div class="row">
+						<div class="col-lg-6 form-group">
+							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control"
+								required="" type="text">
+
+							<input name="email" placeholder="Enter email address"
+								pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+								class="common-input mb-20 form-control" required="" type="email">
+
+							<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
+								required="" type="text">
+						</div>
+						<div class="col-lg-6 form-group">
+							<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'"
+								required=""></textarea>
+						</div>
+						<div class="col-lg-12">
+							<div class="alert-msg" style="text-align: left;"></div>
+							<button class="genric-btn primary" style="float: right;">Enviar Mensaje</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End contact-page Area -->
+<!-- End post-content Area -->
+<!-- End popular-destination Area -->
+<div class="modal fade" id="modalCargandoDetalle" data-backdrop="static" data-keyboard="false" tabindex="-1"
+	role="dialog" style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="progress progress-striped active" style="margin-bottom: 0px;">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+						aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						Cargando . . .
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

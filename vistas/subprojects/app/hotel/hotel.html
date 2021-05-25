@@ -1,0 +1,169 @@
+<!--contenido de la pagina  -->
+<div class="container-fluid page-header ">
+  <div class="form-row">
+    <div class="dropdown col-2">
+      <input type="hidden" id="pageHotel" value="1">
+      <select id="sizePageHotel" class="form-control">
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <h2 class="text-center all-tittles col-8" id="titleManagerHotel">Lista de Hoteles</h2>
+
+    <div class="col-2 text-right">
+      <button class="btn btn-primary" id="btnAbrirbook">
+        <i class="fa fa-plus-square"></i> &nbsp;&nbsp;Registrar
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid py-2">
+  <div class="table-responsive">
+    <table class="table table-hover text-center">
+      <thead>
+        <tr>
+          <th class="text-center">DEPARTAMENTO</th>
+          <th class="text-center">CIUDAD</th>
+          <th class="text-center">NOMBRE</th>
+          <th class="text-center">PRECIO</th>
+          <th class="text-center">IMAGEN</th>
+          <th class="text-center">EDITAR</th>
+          <th class="text-center">ELIMINAR</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyHotel"></tbody>
+    </table>
+  </div>
+  <nav class="border-top  text-center" aria-label="Page navigation example">
+    <ul id="paginationHotel" class="pagination pagination-sm justify-content-center">
+    </ul>
+  </nav>
+  <!-- /pagination BLOG -->
+</div>
+
+
+<div id="ventanaModalManHotel" class="modal fade" tabindex="-1" role="dialog" aria-modal="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <form id="formularioHotel" autocomplete="off">
+        <div class="modal-header">
+
+          <h4 class="modal-title text-center w-100" id="tituloModalManHotel"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            style="margin-top: -1em;margin-right: -1.5em;">
+            <span aria-hidden="true" class="m-0"
+              style="-webkit-text-stroke: 4px white;background: red;border: 0px solid;border-radius: 41px;padding: 5px 12px; font-size: 14px;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="margin-top:20px;">
+          <div class="row">
+            <div class="col-12 col-sm-10 mx-auto form-row">
+              <div class="form-group col-sm-6">
+                <label for="txtCiudadHotel">Ciudad</label>
+                <select class="form-control" id="txtCiudadHotel">
+
+                </select>
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtTrasladoHotel">Estrellas</label>
+                <input type="number" class="form-control" id="txtTrasladoHotel" placeholder="Enter Estrellas">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="txtNombreHotel">Nombre</label>
+                <input type="text" class="form-control" id="txtNombreHotel" placeholder="Enter Nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="txtPrecioHotel">Precio</label>
+                <input type="number" class="form-control" id="txtPrecioHotel" placeholder="Enter Precio">
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtDireccionHotel">Direccion</label>
+                <input type="text" class="form-control" id="txtDireccionHotel" placeholder="Enter Direccion">
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtTelefonoHotel">Telefono</label>
+                <input type="text" class="form-control" id="txtTelefonoHotel" placeholder="Enter Telefono">
+              </div>
+
+              <div class="form-group col-sm-6 ">
+                <label for="txtEmailHotel">Email</label>
+                <input type="text" class="form-control" id="txtEmailHotel" placeholder="Enter email">
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtWebHotel">Pagina Web</label>
+                <input type="text" class="form-control" id="txtWebHotel" placeholder="Enter Pagina Web">
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtFacebookHotel">Facebook</label>
+                <input type="text" class="form-control" id="txtFacebookHotel" placeholder="Enter Facebook">
+              </div>
+
+              <div class="form-group col-sm-6 ">
+                <label for="txtAlojamientoHotel">Alojamiento</label>
+                <input type="text" class="form-control" id="txtAlojamientoHotel" placeholder="Enter Alojamiento">
+              </div>
+              <div class="form-group col-sm-6 ">
+                <label for="txtToursHotel">Tours</label>
+                <input type="text" class="form-control" id="txtToursHotel" placeholder="Enter Tours">
+              </div>
+
+              <div class="form-group col-sm-6 ">
+                <label for="txtAlimentacionHotel">Restaurante</label>
+                <input type="text" class="form-control" id="txtAlimentacionHotel" placeholder="Enter Alimentacion">
+              </div>
+              <div class="form-group col-12">
+                <label for="txtDescripcionHotel">Descripcion</label>
+                <textarea class="form-control" id="txtDescripcionHotel" placeholder="Enter Descripcion"
+                  rows="4"></textarea>
+              </div>
+
+
+              <div class="form-group col-12">
+                <label for="txtImagenHotel">Foto </label>
+                <div id="imagenPreview" class="py-2 text-center">
+                </div>
+                <input id="txtImagenHotel" type="file" accept="image/png, image/jpeg, image/png" class="form-control"
+                  placeholder="Selecciona Imagen " data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Selecciona la Imagen ">
+
+                <small>Tamaño Máximo Permitido: 4 MB</small>
+                <br>
+                <small>Formatos Permitido:JPG, PNG, JPEG</small>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger " data-dismiss="modal">
+            CERRAR
+          </button>
+          <button type="submit" class="btn btn-primary ">
+            GUARDAR
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--final del contenido de la pagina  -->
+
+
+<div class="modal fade" id="modalCargandoHotel" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+  style="padding-top: 40vh; overflow-y: visible; display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="progress progress-striped active" style="margin-bottom: 0px;">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100"
+            aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            Cargando Hotel. . .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
